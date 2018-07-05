@@ -17,4 +17,28 @@
         <beans:property name="useCodeAsDefaultMessage" value="true"/>
     </beans:bean>
 
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:/config/*.properties</value>
+                <!--<value>file:/data/etc/common/*.properties</value>-->
+                <!--<value>file:/data/etc/projects/miniprog-manager-service.properties</value>-->
+            </list>
+        </property>
+    </bean>
+
+    <bean id="propertyConfigUtils"
+          class="com.chaoyue.utils.PropertyConfigUtils">
+        <property name="locations">
+            <list>
+                <value>classpath*:/config/*.properties</value>
+                <!--<value>file:/data/etc/common/*.properties</value>-->
+                <!--<value>file:/data/etc/projects/miniprog-manager-service.properties</value>-->
+            </list>
+        </property>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
 </beans>
