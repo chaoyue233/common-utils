@@ -24,18 +24,18 @@
             <list>
                 <value>classpath*:/config/*.properties</value>
                 <!--<value>file:/data/etc/common/*.properties</value>-->
-                <!--<value>file:/data/etc/projects/miniprog-manager-service.properties</value>-->
+                <!--<value>file:/data/etc/projects/chaoyue-test-service.properties</value>-->
             </list>
         </property>
     </bean>
 
     <bean id="propertyConfigUtils"
-          class="com.chaoyue.utils.PropertyConfigUtils">
+          class="com.chaoyue.common.PropertyConfigUtils">
         <property name="locations">
             <list>
                 <value>classpath*:/config/*.properties</value>
                 <!--<value>file:/data/etc/common/*.properties</value>-->
-                <!--<value>file:/data/etc/projects/miniprog-manager-service.properties</value>-->
+                <!--<value>file:/data/etc/projects/chaoyue-test-service.properties</value>-->
             </list>
         </property>
         <property name="fileEncoding" value="UTF-8"/>

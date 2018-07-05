@@ -1,7 +1,7 @@
-package com.chaoyue.test.utils;
+package com.chaoyue.test.common;
 
 import com.chaoyue.test.AbstractSpringContextTest;
-import com.chaoyue.utils.PropertyConfigUtils;
+import com.chaoyue.common.PropertyConfigUtils;
 import org.junit.Test;
 import org.springframework.util.Assert;
 

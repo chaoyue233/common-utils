@@ -1,4 +1,4 @@
-package com.chaoyue.utils;
+package com.chaoyue.common;
 
 import com.github.pagehelper.PageInfo;
 import org.dozer.DozerBeanMapper;

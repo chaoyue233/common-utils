@@ -1,4 +1,4 @@
-package com.chaoyue.utils;
+package com.chaoyue.common;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import lombok.extern.slf4j.Slf4j;

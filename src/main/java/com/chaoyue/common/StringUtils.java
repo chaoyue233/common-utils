@@ -1,4 +1,4 @@
-package com.chaoyue.utils;
+package com.chaoyue.common;
 
 import java.util.HashMap;
 import java.util.Map;
