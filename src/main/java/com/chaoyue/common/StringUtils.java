@@ -10,6 +10,8 @@ import java.util.regex.Pattern;
  * Created by chaoyue on 2017/6/20
  */
 public class StringUtils {
+    private static final String REPLACE_SUFFIX = "...";
+
     /**
      * 判断字符串是否为空
      *
@@ -110,13 +112,14 @@ public class StringUtils {
         return sb.toString();
     }
 
-    public static String getSubString(String strIn, int len) {
-        if (strIn == null)
-            return null;
-        if (strIn.length() > len)
-            return strIn.substring(0, len - 1);
-        else
-            return strIn;
+    /**
+     * 按照最大长度截取字符串 并替换剩下的部分为 ... 替换后总长度为 len
+     */
+    public static String getSubString(String str, int len) {
+        if (len <= 3) {
+            return str;
+        }
+        return str.substring(0, len - 3) + REPLACE_SUFFIX;
     }
 
     /**
